@@ -1,0 +1,233 @@
+/*!
+ * css for silencily's blog
+ *
+ * Copyright 2013 silencily Silencer.org
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+.fork-img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 0;
+    z-index: 2000;
+}
+
+.navbar-inner {
+    padding: 10px 0px;
+}
+
+.container-narrow {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+/* search area----------------- */
+.search-area-wrapper {
+    background: #353b65 url("../img/main-bg.jpg") center top no-repeat;
+    background-size: 100%;
+    min-height: 350px;
+    height: auto !important;
+    height: 350px;
+}
+
+.search-area-wrapper .search-area {
+    padding: 70px 0;
+}
+
+h3.search-header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+p.search-tag-line {
+    font-family: "Droid Serif", serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+}
+
+form.search-form {
+    margin: 40px 0 0;
+    text-align: center;
+}
+
+form.search-form .input-common, form.search-form input.search-term, form.search-form input.search-btn {
+    font-family: "Open Sans", sans-serif;
+    box-shadow: none;
+    border-radius: 0;
+    display: inline-block;
+    border: none;
+    vertical-align: bottom;
+}
+
+form.search-form input.search-term {
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    padding: 12px;
+    width: 72%;
+    color: #858c91;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+/*form.search-form input.search-term.loading {*/
+/*background-image: url("../images/search-loader.gif");*/
+/*background-repeat: no-repeat;*/
+/*background-position: 98% 50%;*/
+/*}*/
+form.search-form input.search-btn {
+    background-color: #3f4b55;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    padding: 14px 30px 15px;
+    color: #fff;
+}
+
+form.search-form input.search-btn:hover {
+    background-color: #4b5760;
+}
+
+#search-error-container label {
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.lt-ie8 form.search-form input.search-btn {
+    padding-top: 12px;
+    padding-bottom: 13px;
+}
+
+/* Footer ------------------------------------------------------------------------------------------------------------*/
+#footer-wrapper {
+    width: 100%;
+    background: url("../img/footer-bg.png");
+}
+
+#footer-wrapper > #footer {
+    padding: 20px 140px;
+}
+
+#footer .widget {
+    color: #8f98a0;
+}
+
+#footer .widget h3 {
+    color: #fff;
+}
+
+#footer .widget a {
+    color: #ddd;
+}
+
+#footer .widget a:hover {
+    color: #fff;
+}
+
+#footer .widget #twitter_update_list > ul {
+    margin: 0 0 10px;
+}
+
+#footer .widget #twitter_update_list > ul > li {
+    border: none;
+    background: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#footer .widget #twitter_update_list > ul > li span {
+    display: block;
+    color: #656f79;
+}
+
+#footer .widget ul li {
+    border-bottom: 1px solid #535b61;
+}
+
+#footer .widget ul li:last-child {
+    border-bottom: none;
+}
+
+#footer-contact label {
+    display: none;
+}
+
+#footer-contact input[type=text], #footer-contact textarea {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: #2d3338;
+    color: #5a646c;
+}
+
+#footer-contact input[type=submit] {
+    border: none;
+    background-color: #5d686b;
+    color: #aab5bf;
+    padding: 5px 20px;
+}
+
+#footer-contact input[type=submit]:hover {
+    background-color: #525e61;
+}
+
+.lt-ie9 #footer-contact label {
+    display: block;
+}
+
+#footer-bottom-wrapper {
+    background-color: #1b1b1b;
+    width: 100%;
+}
+
+#footer-bottom-wrapper > #footer-bottom {
+    min-height: 25px;
+    height: auto !important;
+    height: 25px;
+    padding: 15px 35px 10px;
+}
+
+#footer-bottom .copyright {
+    margin: 5px 0 10px;
+}
+
+#footer-bottom .social-nav {
+    list-style: none;
+    margin: 0;
+}
+
+.social-nav > li {
+    float: right;
+    margin-left: 4px;
+}
+
+.social-nav li > a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.social-nav li.facebook a {
+    background: url(../img/facebook.png) no-repeat 0 0;
+}
+
+.social-nav li.google a {
+    background: url(../img/google.png) no-repeat 0 0;
+}
+
+.social-nav li.twitter a {
+    background: url(../img/twitter.png) no-repeat 0 0;
+}
+
+.social-nav li > a:hover {
+    background-position: 0 -40px;
+}
