@@ -163,36 +163,16 @@ form.search-form input.search-btn:hover {
     border-bottom: none;
 }
 
-#footer-contact label {
-    display: none;
-}
-
-#footer-contact input[type=text], #footer-contact textarea {
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    background-color: #2d3338;
-    color: #5a646c;
-}
-
-#footer-contact input[type=submit] {
-    border: none;
-    background-color: #5d686b;
-    color: #aab5bf;
-    padding: 5px 20px;
-}
-
-#footer-contact input[type=submit]:hover {
-    background-color: #525e61;
-}
-
-.lt-ie9 #footer-contact label {
-    display: block;
-}
 
 #footer-bottom-wrapper {
     background-color: #1b1b1b;
     width: 100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 0;
+    bottom: 0;
 }
 
 #footer-bottom-wrapper > #footer-bottom {
