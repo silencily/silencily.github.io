@@ -29,55 +29,10 @@ title: Silencily's Blog
     <div id="footer" class="container-fluid">
         <div class="row-fluid">
             <div class="span4">
-                <section class="widget"><h3 class="title">How it works</h3>
-
-                    <div class="textwidget"><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-
-                        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                            ut aliquip ex ea commodo consequat. </p>
-                    </div>
-                </section>
-            </div>
-
-            <div class="span4">
                 <section class="widget"><h3 class="title">Categories</h3>
                     <ul>
-                        <li class="cat-item cat-item-8"><a
-                                href="http://knowledgebase.inspirythemes.com/category/advanced-techniques/"
-                                title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut">Advanced
-                            Techniques</a>
-                        </li>
-                        <li class="cat-item cat-item-4"><a
-                                href="http://knowledgebase.inspirythemes.com/category/designing-in-wordpress/"
-                                title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet">Designing
-                            in WordPress</a>
-                        </li>
-                        <li class="cat-item cat-item-9"><a
-                                href="http://knowledgebase.inspirythemes.com/category/server-database/"
-                                title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore">Server
-                            &amp; Database</a>
-                        </li>
-                        <li class="cat-item cat-item-5"><a
-                                href="http://knowledgebase.inspirythemes.com/category/theme-development/"
-                                title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna">Theme
-                            Development</a>
-                        </li>
-                        <li class="cat-item cat-item-6"><a
-                                href="http://knowledgebase.inspirythemes.com/category/website-dev/"
-                                title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam">Website
-                            Dev</a>
-                        </li>
-                        <li class="cat-item cat-item-1"><a
-                                href="http://knowledgebase.inspirythemes.com/category/wordpress-for-beginners/"
-                                title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat">WordPress
-                            for Beginners</a>
-                        </li>
-                        <li class="cat-item cat-item-7"><a
-                                href="http://knowledgebase.inspirythemes.com/category/wordpress-plugins/"
-                                title="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore">WordPress
-                            Plugins</a>
-                        </li>
+                        {% assign categories_list = site.categories %}
+                        {% include JB/categories_list %}
                     </ul>
                 </section>
             </div>
@@ -86,18 +41,20 @@ title: Silencily's Blog
             <div class="span4">
                 <section class="widget"><h3 class="title">Latest Archives</h3>
 
-                    <div id="twitter_update_list">
+                    <div id="latest_post_list">
                         <ul>
-                            <li class="twitter-item">How to Customize Your WordPress Theme With a Child Theme | Wptuts+
-                                <a href="http://t.co/ei2uzKzS37" class="twitter-link">http://t.co/ei2uzKzS37</a> via
-                                @wptuts<br><span class="twitter-timestamp">13th Jul 2013</span></li>
-                            <li class="twitter-item">Check out this great <a
-                                    href="http://twitter.com/#search?q=themeforest"
-                                    class="twitter-link">#themeforest</a> item 'BlogMag - WordPress Blog and Magazine
-                                Theme' <a href="http://t.co/WKFzq5bQ7x"
-                                          class="twitter-link">http://t.co/WKFzq5bQ7x</a><br><span
-                                        class="twitter-timestamp">15th Jun 2013</span></li>
+                            {% assign index_posts_collate = site.posts %}
+                            {% include JB/index_posts_collate %}
                         </ul>
+                    </div>
+                </section>
+            </div>
+            <div class="span4">
+                <section class="widget"><h3 class="title">About</h3>
+
+                    <div class="textwidget"><p>Email:{{ site.author.email }}</p>
+
+                        <p></p>
                     </div>
                 </section>
             </div>

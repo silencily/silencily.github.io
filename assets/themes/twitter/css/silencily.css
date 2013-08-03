@@ -113,7 +113,7 @@ form.search-form input.search-btn:hover {
 }
 
 #footer-wrapper > #footer {
-    padding: 20px 140px;
+    padding: 20px 180px;
 }
 
 #footer .widget {
@@ -132,19 +132,18 @@ form.search-form input.search-btn:hover {
     color: #fff;
 }
 
-#footer .widget #twitter_update_list > ul {
+#footer .widget #latest_post_list > ul {
     margin: 0 0 10px;
 }
 
-#footer .widget #twitter_update_list > ul > li {
+#footer .widget #latest_post_list > ul > li {
     border: none;
     background: none;
     padding: 0;
     margin-bottom: 20px;
 }
 
-#footer .widget #twitter_update_list > ul > li span {
-    display: block;
+#footer .widget #latest_post_list > ul > li span {
     color: #656f79;
 }
 
