@@ -1,5 +1,4 @@
-<div class="container-narrow">
-    <div class="content">
+<div class="container content">
         <div class="page-header">
             <h1>{{ page.title }} {% if page.tagline %}
                 <small>{{page.tagline}}</small>
@@ -12,7 +11,7 @@
                 <div class="date">
                     <span>{{ page.date | date_to_long_string }}</span>
                 </div>
-                <div class="content">
+                <div>
                     {{ content }}
                 </div>
 
@@ -54,5 +53,4 @@
                 {% include JB/comments %}
             </div>
         </div>
-    </div>
 </div>
