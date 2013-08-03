@@ -14,14 +14,14 @@ title: Silencily's Blog
               action="#" autocomplete="off" novalidate="novalidate">
             <input class="search-term required" type="text" id="s" name="s" placeholder="Type your search terms here"
                    title="* Please enter a search term!" autocomplete="off">
-            <input class="search-btn" type="submit" value="Search">
+            <input id="search" class="search-btn" type="button" value="Search">
 
             <div id="search-error-container"></div>
         </form>
     </div>
 </div>
 <!-- search result -->
-<div class="container-fluid">
+<div id="search_results" class="container-fluid">
 
 </div>
 <!-- footer -->
@@ -62,3 +62,20 @@ title: Silencily's Blog
     </div>
     <!-- end of #footer -->
 </div>
+<script src="{{ BASE_PATH }}/assets/jquery/jquery-1.10.2.js"></script>
+<script src="{{ BASE_PATH }}/assets/jquery/jquery-tapir.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('#search').click(function(){
+            var param=$('#s').val();
+            if(!param||param.length==0){
+                $('#search-error-container').text("请输入查询的关键字！");
+                return;
+            }
+            $('#search-error-container').text("");
+            var settings={'token':'51fd17de3484680200000002','query_param':param};
+            $('#search_results').tapir(settings);
+            alert("hello");
+        });
+    });
+</script>
