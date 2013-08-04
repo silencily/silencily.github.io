@@ -21,6 +21,7 @@
 
       $.getJSON(
         'http://tapirgo.com/api/1/search.json?token=' + settings.token + '&query=' + paramValue(settings.query_param) + '&callback=?', function(data){
+          alert(data);
           if(settings['complete']) { settings.complete() }
           $.each(data, function(key, val) {
             el.append('<div class="result"><h3><a href="' + val.link + '">' + val.title + '</a></h3><p>' + val.summary + '</p></div>');
