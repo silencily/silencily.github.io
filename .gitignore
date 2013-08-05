@@ -11,3 +11,8 @@ Thumbs.db
 
 silencily.github.io.iml
 .idea/*
+
+*.sublime-project
+*.sublime-workspace
+codekit-config.json
+Gemfile.lock
