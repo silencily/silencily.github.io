@@ -1,5 +1,5 @@
-title:            Site Title
-description:      Describe your website here.
+title:            Silencily's Blog
+description:      记录生活，分享生活.
 logo:             site-logo.png
 disqus_shortname: 
 #Comment out url when working locally to resolve base urls correctly
@@ -35,8 +35,6 @@ links:
     url: /about
   - title: Articles
     url: /articles
-  - title: Theme Setup
-    url: /theme-setup
   - title: Made Mistakes
     url: http://mademistakes.com
     external: true
