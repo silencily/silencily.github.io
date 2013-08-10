@@ -20,7 +20,7 @@
     <div class="wrap">
         <a href="{{ site.url }}" class="site-logo" rel="home" title="{{ site.title }}" itemprop="url"><img src="{{ site.url }}/images/{{ site.logo }}" width="200" height="200" alt="{{ site.title }} logo" class="animated fadeInUp" itemprop="logo"></a>
         <h2 class="site-title animated fadeIn"><a href="{{ site.url }}">{{ page.home }}</a></h2>
-        <form autocomplete="off" novalidate="novalidate">
+        <form id="search-form" autocomplete="off" novalidate="novalidate">
             <input class="search" type="text" id="s" name="s" placeholder="Type your search terms here"
                    title="* Please enter a search term!" autocomplete="off">
             <input id="search" type="submit" value="Search">

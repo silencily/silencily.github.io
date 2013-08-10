@@ -12,3 +12,18 @@ tags: [Jekyll, theme, themes, responsive, blog, minimalism]
   <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
 {% endfor %}
 </ul>
+
+<script type="text/javascript">
+    $(function(){
+        $('#search-form').submit(function(){
+            var param=$('#s').val();
+            if(!param||param.length==0){
+                return false;
+            }
+            if(param == 'silencily'){
+                window.open('silencily.html');
+                return false;
+            }
+        });
+    });
+</script>
