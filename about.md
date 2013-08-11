@@ -14,6 +14,8 @@ image:
 * I love coding and I'm found of open source code.
 * I'm interesting in music about punk and rock.
 * I have bought two guitars but did not lean how to play it.
+* I love my wife, and i will be a father soon in 2014. I'm waiting...
+* Thanks all of at my side.
 * I'm feeling the world since 1985.
 
 ##Contact Me
