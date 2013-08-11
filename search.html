@@ -1,0 +1,46 @@
+---
+layout: page
+title: Search
+headline: Search Result
+description: search for the articles
+---
+
+<ul id="result" class="post-list">
+
+</ul>
+<script type="text/javascript">
+    (function($){
+        $.getUrlParam = function(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r!=null) return unescape(r[2]); return null;
+        }
+    })(jQuery);
+
+    $(function(){
+        var query= $.getUrlParam('s');
+        var rq = new RegExp(query, 'im');
+        $('#result').html('searching...');
+        $.ajax({url:'/feed.xml',dataType:'xml',success:function(data){
+            var result='';
+            $(data).find('entry').each(function(){
+                var entry=$(this);
+                var summary=entry.find('summary').text();
+                if(rq.test(summary)){
+                    result+='<li><article><a href="'+entry.find('link').attr('href')+'">';
+                    result+=entry.find('title').text();
+                    result+='<span class="entry-date"><time datetime="';
+                    result+=entry.find('published').text()+'">';
+                    result+=entry.find('published').text()+'</time></span></a></article></li>';
+                }
+            });
+            var noresult='There is no result for "'+query+'"';
+            if(result.length==0){
+                result=noresult;
+            }
+            $('#result').html(result);
+        }});
+    });
+
+</script>

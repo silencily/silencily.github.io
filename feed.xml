@@ -21,9 +21,9 @@ layout: none
   <link rel="alternate" type="text/html" href="{{ site.url }}{{ post.url }}" />
   <id>{{ site.url }}{{ post.id }}</id>
   {% if post.modified %}<updated>{{ post.modified | to_xmlschema }}T00:00:00-00:00</updated>
-  <published>{{ post.date | date_to_xmlschema }}</published>
-  {% else %}<published>{{ post.date | date_to_xmlschema }}</published>
-  <updated>{{ post.date | date_to_xmlschema }}</updated>{% endif %}
+  <published>{{ post.date | date: "%B %d, %Y" }}</published>
+  {% else %}<published>{{ post.date | date: "%B %d, %Y" }}</published>
+  <updated>{{ post.date | date: "%B %d, %Y" }}</updated>{% endif %}
   <author>
     <name>{{ site.owner.name }}</name>
     <uri>{{ site.url }}</uri>
@@ -31,6 +31,7 @@ layout: none
   </author>
   <content type="html">{{ post.content | xml_escape }}
   &lt;p&gt;&lt;a href=&quot;{{ site.url }}{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt; was originally published by {{ site.owner.name }} at &lt;a href=&quot;{{ site.url }}&quot;&gt;{{ site.title }}&lt;/a&gt; on {{ post.date | date: "%B %d, %Y" }}.&lt;/p&gt;</content>
+  <summary type="html">{{ post.description | xml_escape }}</summary>
 </entry>
 {% endfor %}
 </feed>
