@@ -1,7 +1,7 @@
 title:            Silencily's Blog
 description:      记录生活，分享生活.
 logo:             site-logo.png
-disqus_shortname: 
+disqus_shortname: silencily
 #Comment out url when working locally to resolve base urls correctly
 url:              http://silencily.github.io
 
@@ -11,16 +11,16 @@ owner:
   avatar:         silencily.jpg
   email:          silencily@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
+  twitter:        silencily
+  facebook:       silencily
+  github:         silencily
   stackexchange:  
   linkedin:       
   instagram:      
-  flickr:         
+  flickr:         silencily
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  google_plus:    https://plus.google.com/117332623043251466514
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   
