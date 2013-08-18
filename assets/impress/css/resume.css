@@ -12,3 +12,13 @@
 .self-evaluate ul,.self-about ul{
     list-style: disc outside none;
 }
+p{
+    font-size: 0.7em;
+    font-family: "SimSun";
+}
+p span{
+    color: #503680;
+}
+h2{
+    font-weight: bold;
+}
