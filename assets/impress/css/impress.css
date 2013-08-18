@@ -280,37 +280,22 @@ a:focus {
 #title .footnote {
     font-size: 32px;
 }
-
-/*
-    Second step is nothing special, just a text with a link, so it doesn't need
-    any special styling.
-
-    Let's move to 'big thoughts' with centered text and custom font sizes.
-*/
-#big {
-    width: 600px;
+#gicom{
+    width: 670px;
+}
+#gicom h2{
     text-align: center;
-    font-size: 60px;
-    line-height: 1;
 }
-
-#big b {
-    display: block;
-    font-size: 250px;
-    line-height: 250px;
+#gicom ul{
+    font-size: 0.5em;
 }
-
-#big .thoughts {
-    font-size: 90px;
-    line-height: 150px;
+#gicom ul li ul{
+    list-style: disc outside none;
+    margin-left: 20px;
+    font-size: 0.58em;
 }
-
-/*
-    'Tiny ideas' just need some tiny styling.
-*/
-#tiny {
-    width: 500px;
-    text-align: center;
+#gicom ul li p{
+    font-size: 0.58em;
 }
 
 /*
