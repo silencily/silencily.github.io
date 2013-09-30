@@ -6,15 +6,23 @@ description : Apache+Tomcat+SSL
 comments : Apache+Tomcat+SSL
 title : Apache+Tomcat+SSL
 ---
-一、apache+openssl
-1.安装必要的软件
-我用的是apache-http-2.2.25版，可以直接官方提供的绑定openssl的apache.
-文件名是：httpd-2.2.25-win32-x86-openssl-0.9.8y.msi
+# apache+openssl
+
+## 安装必要的软件
+
+我用的是'apache-http-2.2.25'版，可以直接官方提供的绑定openssl的apache.
+文件名是：'httpd-2.2.25-win32-x86-openssl-0.9.8y.msi'
 否则单独安装windows下的openssl比较麻烦，要么找到一个第三方的编译结果，要么自己编译
-2. 生成服务器证书
-安装好在bin目录下有一个openssl.exe文件，用来生成证书和密钥。将openssl.exe添加至环境变量中方便直接通过命令行（CMD）进行命令操作，为了通过命令创建的证书更为清晰的划分，创建一个单独空目录，使用CMD切换至该目录进行相关操作，以下命令执行目录都在此目录下。
-1). 生成服务器用的私钥文件server.key
-   执行命令行：openssl genrsa -out server.key 1024
+
+## 生成服务器证书
+
+安装好在bin目录下有一个openssl.exe文件，用来生成证书和密钥。
+将openssl.exe添加至环境变量中方便直接通过命令行（CMD）进行命令操作，为了通过命令创建的证书更为清晰的划分，
+创建一个单独空目录，使用CMD切换至该目录进行相关操作，以下命令执行目录都在此目录下。
+
+1. 生成服务器用的私钥文件server.key
+
+   执行命令行：'openssl genrsa -out server.key 1024'
 注意：有文档指出使用 openssl genrsa -des3 -out server.key 1024 生成私钥文件，这样生成的私钥文件是需要口令的，需要口令该如何配置未验证。这样会出现Apache启动失败，错误提示是：Init: SSLPassPhraseDialog builtin is not supported on Win32 (key file .....)。原因是window下的apache不支持加密的私钥文件。
 2). 生成未签署的server.csr
 首先将apache安装目录中conf/openssl.cnf复制到命令行目录下
