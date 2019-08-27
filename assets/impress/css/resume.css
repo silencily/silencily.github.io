@@ -91,6 +91,12 @@ h2{
     list-style: decimal;
     padding-left: 2em;
 }
+#project{
+    color: #56C5FF;
+}
+#company{
+    color: #83BA1F;
+}
 #thanks{
     color: #FF0000;
 }
