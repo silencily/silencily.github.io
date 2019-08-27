@@ -21,7 +21,7 @@ tags: [silencily, resume, impress]
     It will not be rotated or scaled.
 
 -->
-<div id="about" class="step slide" data-x="-1000" data-y="-1500">
+<div id="main" class="step slide" data-x="-1000" data-y="-1500">
     <img class="self-img" src="{{ site.url }}/images/silencily-1.jpg">
     <div class="self-about">
         <ul>
@@ -37,22 +37,7 @@ tags: [silencily, resume, impress]
     </div>
 </div>
 
-<!--
-
-    The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-    If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-
-    So in the example below it'll be `step-2`.
-
-    The hash part of the url when this step is active will be `#/step-2`.
-
-    You can also use `#step-2` in a link, to point directly to this particular step.
-
-    Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-    Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-
--->
-<div class="step slide" data-x="0" data-y="-1500" data-rotate="45">
+<div id="self" class="step slide" data-x="0" data-y="-1500" data-rotate="45">
     <div class="self-evaluate">
         <ul>
             <li>热爱开源技术</li>
@@ -71,7 +56,7 @@ tags: [silencily, resume, impress]
     </div>
 </div>
 
-<div class="step slide" data-x="1000" data-y="-1500">
+<div id="skill" class="step slide" data-x="1000" data-y="-1500">
     <div>
         <h2>语言能力</h2>
 
@@ -79,7 +64,7 @@ tags: [silencily, resume, impress]
         <p><span>英语阅读英文技术文档无压力，当然在阅读开源框架代码，读懂英文注释是关键的一步。</span></p>
 
 
-        <h2>专业技能</h2>
+        <h2 style="margin-top: 10px;">专业技能</h2>
 
         <p>
             编程语言：<b class="positioning">JAVA</b>10年、<b class="rotating">Golang</b>1年、<b class="scaling">C#</b>3年、
@@ -103,35 +88,19 @@ tags: [silencily, resume, impress]
     down (4 times) to make it back to it's correct size.
 
 -->
-<div id="title" class="step" data-x="0" data-y="0" data-z="-3000" data-rotate="300" data-scale="1">
+<div id="hobby" class="step" data-x="0" data-y="0" data-z="-3000" data-rotate="300" data-scale="1">
     <h2>兴趣爱好</h2>
     <p>CODING，音乐，足球，乒乓球，吉他，魔兽世界，<b class="positioning">有意义的事</b></p>
 </div>
 
-<!--
-
-    This element introduces rotation.
-
-    Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-    element should be rotated by 90 degrees clockwise.
-
--->
-<div id="its" class="step" data-x="850" data-y="3000"  data-z="0" data-rotate="90" data-scale="5">
+<div id="company" class="step" data-x="850" data-y="3000"  data-z="0" data-rotate="90" data-scale="5">
     <p>下面是我作为一个程序员的<strong>工作历程</strong> <br/>
        虽然很简单，但是每一天都会在工作中学习到新的知识，为成为一个伟大的<strong>“程序员”</strong>而打下坚实的基础。<br/>
        所以由衷的感谢公司的培养和曾经一起奋斗过的团队。</p>
 </div>
 
-<!--
 
-    And now it gets really exciting! We move into third dimension!
-
-    Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
-    `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
-    positioned far away from us (by 3000px).
-
--->
-<div id="gicom" class="step" data-x="2800" data-y="3000" data-z="-2000" data-rotate="300" data-scale="1">
+<div id="company-gicom" class="step" data-x="1000" data-y="-1500" data-z="-2000" data-rotate="300" data-scale="1">
     <h2>北京高立开元创新科技股份有限公司</h2>
     <ul>
         <li>时间：<span class="scaling">2009/01--2013/04</span></li>
@@ -155,7 +124,7 @@ tags: [silencily, resume, impress]
         </li>
     </ul>
 </div>
-<div id="tdr" class="step" data-x="3000" data-y="3000" data-z="-1500" data-rotate="300" data-scale="1">
+<div id="company-tdr" class="step" data-x="2000" data-y="-800" data-z="-1500" data-rotate="300" data-scale="1">
     <h2>天地融股份有限公司</h2>
     <ul>
         <li>时间：<span class="scaling">2013/04--2013/11</span></li>
@@ -174,7 +143,7 @@ tags: [silencily, resume, impress]
     </ul>
 </div>
 
-<div id="minxin" class="step" data-x="3200" data-y="3000" data-z="-1000" data-rotate="300" data-scale="1">
+<div id="company-minxin" class="step" data-x="1000" data-y="0" data-z="-1000" data-rotate="300" data-scale="1">
     <h2>中融民信资本管理有限公司</h2>
     <ul>
         <li>时间：<span class="scaling">2013/11--2015/05</span></li>
@@ -191,7 +160,32 @@ tags: [silencily, resume, impress]
         </li>
     </ul>
 </div>
-<div id="ruanrong" class="step" data-x="3400" data-y="3000" data-z="0" data-rotate="300" data-scale="1">
+<div id="company-ruanrong" class="step" data-x="2000" data-y="1000" data-z="0" data-rotate="300" data-scale="1">
+    <h2>软融理念科技(北京)有限公司</h2>
+    <ul>
+        <li>时间：<span class="scaling">2015/05--2019/08</span></li>
+        <li>职位：技术负责人</li>
+        <li>工作内容：
+            <ul>
+                <li>全面负责项目技术方向研究和总体规划,组织编制技术发展战略计划</li>
+                <li>项目管理与技术支持,带领技术团队构架、研发、设计等</li>
+                <li>团队组建与管理,负责团队目标和工作计划的制定和高效执行,保证目标实现</li>
+                <li>市场支持,协助市场部门提供项目方案规划设计</li>
+                <li>对产品线问题进行分析、提出解决方案</li>
+                <li>核心代码设计和编写,新技术调研与落地,涉及编程语言JAVA、C#、Golang、Python等</li>
+                <li>区块链相关技术研究,主要涉及:比特币、超级账本(hyperlegder fabric)应用及框架研究,侧链、跨链、共识机制、容器(docker)等核心技术的研究</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div id="project" class="step" data-x="-850" data-y="3000"  data-z="1000" data-rotate="180" data-scale="5">
+    <p>下面是我作为一个程序员的<strong>项目经验</strong> <br/>
+        项目是实现自我价值的基础，所以把每个项目都作为自己的<strong>孩子</strong>一样看待，让每个项目都能<strong>开枝散叶</strong>...<br/>
+        尽管存在个别项目会夭折，但依然是自己技能经验的见证。</p>
+</div>
+
+<div id="project-ruanrong" class="step" data-x="3400" data-y="3000" data-z="0" data-rotate="300" data-scale="1">
     <h2>中融民信资本管理有限公司</h2>
     <ul>
         <li>时间：<span class="scaling">2015/05--2019/08</span></li>
@@ -211,78 +205,6 @@ tags: [silencily, resume, impress]
 </div>
 
 
-<!--
-
-    This step here doesn't introduce anything new when it comes to data attributes, but you
-    should notice in the demo that some words of this text are being animated.
-    It's a very basic CSS transition that is applied to the elements when this step element is
-    reached.
-
-    At the very beginning of the presentation all step elements are given the class of `future`.
-    It means that they haven't been visited yet.
-
-    When the presentation moves to given step `future` is changed to `present` class name.
-    That's how animation on this step works - text moves when the step has `present` class.
-
-    Finally when the step is left the `present` class is removed from the element and `past`
-    class is added.
-
-    So basically every step element has one of three classes: `future`, `present` and `past`.
-    Only one current step has the `present` class.
-
--->
-<!--<div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-    <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b>
-        them on an infinite canvas</p>
-</div>
-
-<div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-    <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-</div>
-
-<div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-    <p>want to know more?</p>
-    <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
-</div>
-
-<div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-    <p>one more thing...</p>
-</div>-->
-
-<!--
-
-    And the last one shows full power and flexibility of impress.js.
-
-    You can not only position element in 3D, but also rotate it around any axis.
-    So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
-    10 degrees (clockwise) around Y axis.
-
-    You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
-    as `data-rotate` (these two are basically aliases).
-
--->
-<!--<div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10"
-     data-scale="2">
-    <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span
-            class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-    <span class="footnote">* beat that, prezi ;)</span>
-</div>-->
-
-<!--
-
-    So to make a summary of all the possible attributes used to position presentation steps, we have:
-
-    * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
-        the canvas in pixels; their default value is 0;
-    * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
-        the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
-        are exactly the same;
-    * `data-scale` - defines the scale of step element; default value is 1
-
-    These values are used by impress.js in CSS transformation functions, so for more information consult
-    CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
-
--->
 <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
 </div>
 
