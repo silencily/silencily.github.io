@@ -78,3 +78,7 @@ h2{
     font-family: "SimSun";
     list-style: disc outside none;
 }
+.project ul li ul{
+    list-style: decimal;
+    text-indent: 1em;
+}
