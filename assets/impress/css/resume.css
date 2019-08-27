@@ -30,7 +30,7 @@ h2{
     transform: translateY(-10px);
 }
 
-#ing.present .rotating {
+.rotating {
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
     -ms-transform: rotate(-10deg);
