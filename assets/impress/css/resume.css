@@ -65,11 +65,11 @@ h2{
 }
 
 .company{
-    font-size: 0.7em;
-    font-family: "SimSun";
+    font-size: 1em;
+    font-family:"Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
 }
 
 .project{
-    font-size: 0.7em;
-    font-family: "SimSun";
+    font-size: 1em;
+    font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
 }
