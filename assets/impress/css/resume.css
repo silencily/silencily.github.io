@@ -81,4 +81,5 @@ h2{
 .project ul li ul{
     list-style: decimal;
     text-indent: 1em;
+    padding-left: 2em;
 }
