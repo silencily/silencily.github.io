@@ -73,3 +73,9 @@ h2{
     font-size: 1.3em;
     font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
 }
+.company p{
+    font-size: 1em;
+}
+.project ul{
+    font-size: 1em;
+}
