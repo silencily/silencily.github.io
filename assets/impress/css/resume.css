@@ -73,6 +73,9 @@ h2{
     font-size: 1em;
     font-family: "SimSun";
 }
+.company ul{
+    list-style: disc outside none;
+}
 .project ul{
     font-size: 1em;
     font-family: "SimSun";
