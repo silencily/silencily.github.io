@@ -63,13 +63,13 @@ h2{
 .company{
     font-size: 1.3em;
     font-family:"Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
-    color: #00AA00;
+    color: #00b88d;
 }
 
 .project{
     font-size: 1.3em;
     font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
-    color: #0000CC;
+    color: #3399CC;
 }
 .company p{
     font-size: 1em;
@@ -80,7 +80,7 @@ h2{
 }
 .company ul li ul{
     list-style: decimal;
-    padding-left: 2em;
+    padding-left: 1em;
 }
 .project ul{
     font-size: 1em;
