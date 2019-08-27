@@ -63,3 +63,13 @@ h2{
     -o-transition: 0.5s;
     transition: 0.5s;
 }
+
+.company{
+    font-size: 0.7em;
+    font-family: "SimSun";
+}
+
+.project{
+    font-size: 0.7em;
+    font-family: "SimSun";
+}
